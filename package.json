@@ -1,0 +1,15 @@
+{
+  "name": "microsoft-clone",
+  "version": "1.0.0",
+  "description": "clone website for microsoft homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildcss":"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "author": "Sushilkumar Bodade",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

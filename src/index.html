@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft - Cloud, Computers, Apps & Gaming</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./output.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/microsoft-favicon.png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="p-3 flex justify-between items-center md:p-6 lg:px-16">
+        <!-- Nav Left -->
+        <div class="flex gap-4 md:hidden">
+          <!-- Menu Icons -->
+          <div class="menu-icon relative mr-4 w-full">
+            <svg
+              id="hamburger"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="absolute w-6 h-6 cursor-pointer"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+            <svg
+              id="close"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="absolute w-6 h-6 cursor-pointer hidden"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+          <!-- Searchbar -->
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 cursor-pointer"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- Microsoft Logo -->
+        <div class="flex gap-6 items-center">
+          <img
+            class="h-6"
+            src="./assets/microsoft-logo.png"
+            alt="Microsoft logo"
+          />
+          <ul class="hidden text-sm md:flex md:gap-4">
+            <li>
+              <a class="decoration-2 hover:underline" href="#">Microsoft 365</a>
+            </li>
+            <li><a class="decoration-2 hover:underline" href="#">Teams</a></li>
+            <li>
+              <a class="decoration-2 hover:underline" href="#">Windows</a>
+            </li>
+            <li>
+              <a class="decoration-2 hover:underline" href="#">Surface</a>
+            </li>
+            <li><a class="decoration-2 hover:underline" href="#">Xbox</a></li>
+            <li>
+              <a class="decoration-2 hover:underline" href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Nav Right -->
+        <div class="flex gap-4">
+          <!-- Shopping Cart -->
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 cursor-pointer"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+              />
+            </svg>
+          </div>
+          <!-- Account  -->
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 cursor-pointer"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <section>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-slate-100 text-sm border-b-2 border-black"
+      >
+        <ul>
+          <li class="p-2 border-y border-slate-300">Microsoft 365</li>
+          <li class="p-2 border-y border-slate-300">Teams</li>
+          <li class="p-2 border-y border-slate-300">Windows</li>
+          <li class="p-2 border-y border-slate-300">Surface</li>
+          <li class="p-2 border-y border-slate-300">Xbox</li>
+          <li class="p-2 border-y border-slate-300">Support</li>
+          <li
+            class="dropdown p-2 border-y border-slate-300 flex justify-between items-center"
+          >
+            PC & Devices
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
+          <ul class="pl-8 hidden">
+            <li class="p-2 border-y border-slate-300">Shop Xbox</li>
+            <li class="p-2 border-y border-slate-300">Accessories</li>
+          </ul>
+          <li
+            class="dropdown p-2 border-y border-slate-300 flex justify-between items-center"
+          >
+            Developer & IT
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
+          <ul class="pl-8 hidden">
+            <li class="p-2 border-y border-slate-300">Developer Center</li>
+            <li class="p-2 border-y border-slate-300">Documentation</li>
+            <li class="p-2 border-y border-slate-300">Micrsoft Learn</li>
+            <li class="p-2 border-y border-slate-300">
+              Micrsoft Tech Community
+            </li>
+            <li class="p-2 border-y border-slate-300">Azure Marketplace</li>
+            <li class="p-2 border-y border-slate-300">Appsource</li>
+            <li class="p-2 border-y border-slate-300">Visual Studio</li>
+          </ul>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div>
+        <div class="slide sm:relative">
+          <img
+            id="slide1"
+            class="h-full w-full"
+            src="./assets/microsoft-365-slide-1.avif"
+            alt="slide 1 image"
+          />
+          <div class="p-5 sm:absolute top-10 lg:left-20 lg:top-36">
+            <div class="text-2xl font-semibold my-1">Microsoft 365</div>
+            <div class="my-2 lg:my-4">
+              Everything you need to achieve more in less time
+            </div>
+            <div class="flex flex-wrap gap-4 items-center">
+              <button
+                class="bg-blue-600 rounded-sm px-4 py-2 text-white font-semibold hover:bg-blue-800 lg:my-4"
+              >
+                For one person
+              </button>
+              <a
+                href="#"
+                class="text-black font-semibold flex hover:underline hover:gap-1"
+                >For up to six people
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="slide hidden">
+          <img
+            id="slide2"
+            class="h-full w-full"
+            src="./assets/pc-games-pass-slide-2.jpg"
+            alt="slide 2 image"
+          />
+          <div
+            class="p-5 sm:absolute sm:top-20 sm:text-white lg:left-20 lg:top-56"
+          >
+            <div class="text-2xl font-semibold my-1">PC Game Pass</div>
+            <div class="my-2 lg:my-4">
+              Unlock 100+ great games and EA Play, plus get your <br />
+              first month for $50. Offer available to new subscribers only.
+            </div>
+            <button
+              class="bg-blue-600 rounded-sm px-4 py-2 text-white font-semibold hover:bg-blue-800 lg:my-4"
+            >
+              Join now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="my-4 flex gap-4 justify-center items-center">
+        <div class="cursor-pointer hover:-translate-x-2" onclick="backword()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </div>
+        <div
+          class="circle bg-black h-3 w-3 border-2 borderlack rounded-full"
+        ></div>
+        <div class="circle h-3 w-3 border-2 border-black rounded-full"></div>
+        <div class="cursor-pointer hover:translate-x-2" onclick="forword()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopping Section -->
+    <section id="shopping">
+      <div
+        class="flex gap-8 flex-wrap justify-center items-center p-6 md:gap-24 lg:px-16"
+      >
+        <!-- Products go here -->
+        <div class="flex gap-2 flex-col items-center">
+          <img src="./assets/microsoft-365-logo.webp" alt="microsoft 365" />
+          <a href="#" class="text-blue-600 font-semibold underline"
+            >Choose your Microsoft 365</a
+          >
+        </div>
+        <div class="flex gap-2 flex-col items-center">
+          <img src="./assets/surface-device-logo.webp" alt="surface" />
+          <a href="#" class="text-blue-600 font-semibold underline"
+            >Explore Surface devices</a
+          >
+        </div>
+        <div class="flex gap-2 flex-col items-center">
+          <img src="./assets/xbox-logo.webp" alt="xbox games" />
+          <a href="#" class="text-blue-600 font-semibold underline"
+            >Buy Xbox games</a
+          >
+        </div>
+        <div class="flex gap-2 flex-col items-center">
+          <img src="./assets/microsoft-365-logo.webp" alt="Windows 11" />
+          <a href="#" class="text-blue-600 font-semibold underline"
+            >Get Windows 11</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+      <div class="p-3 sm:grid sm:gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:px-16">
+        <!-- Products go here -->
+        <div class="my-6">
+          <img
+            class="w-full"
+            src="./assets/surface-laptop-5.webp"
+            alt="Surface laptop 5"
+          />
+          <div class="inline-block my-1 px-3 py-1 bg-amber-400 font-semibold">
+            New
+          </div>
+          <div class="text-2xl font-semibold my-1">Surface Laptop 5</div>
+          <div class="my-4">
+            Sophisticated style and multitasking speed powered by 12th Gen
+            Intel® Core™ i5/i7 processors built on the Intel® Evo™ platform make
+            this the perfect gift
+          </div>
+          <a
+            href="#"
+            class="text-blue-600 font-semibold flex hover:underline hover:gap-1"
+            >Learn more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="my-6">
+          <img
+            class="w-full"
+            src="./assets/xbox-series-x.jpg"
+            alt="Xbox Series X"
+          />
+          <div
+            class="inline-block my-1 px-3 py-1 bg-amber-400 font-semibold invisible"
+          >
+            New
+          </div>
+          <div class="text-2xl font-semibold my-1">Xbox Series X</div>
+          <div class="my-4">
+            Give thrills that’ll last all year with the fastest, most powerful
+            Xbox ever.
+          </div>
+          <a
+            href="#"
+            class="text-blue-600 font-semibold flex hover:underline hover:gap-1"
+            >Shop Xbox Series X
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="my-6">
+          <img
+            class="w-full"
+            src="./assets/microsoft-365.webp"
+            alt="Microsoft 365"
+          />
+          <div
+            class="inline-block my-1 px-3 py-1 bg-amber-400 font-semibold invisible"
+          >
+            New
+          </div>
+          <div class="text-2xl font-semibold my-1">Microsoft 365</div>
+          <div class="my-4">
+            Apps and features to help you turn ideas into reality, stay safer
+            and focus on the important things in life.
+          </div>
+          <a
+            href="#"
+            class="text-blue-600 font-semibold flex hover:underline hover:gap-1"
+            >For one person
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="text-blue-600 font-semibold flex hover:underline hover:gap-1"
+            >For up to six people
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="my-6">
+          <img
+            class="w-full"
+            src="./assets/next-generation-games.jpg"
+            alt="Next generation games"
+          />
+          <div
+            class="inline-block my-1 px-3 py-1 bg-amber-400 font-semibold invisible"
+          >
+            New
+          </div>
+          <div class="text-2xl font-semibold my-1">
+            Designed for life today - and tomorrow
+          </div>
+          <div class="my-4">
+            The next- generation of games. Your goals.Friends and family.
+            Windows 11 was made to bring you closer to everything you love.
+          </div>
+          <a
+            href="#"
+            class="text-blue-600 font-semibold flex hover:underline hover:gap-1"
+            >See if your PC is ready
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Edge Section -->
+    <section id="edge">
+      <div class="p-3 lg:relative lg:px-16">
+        <img
+          class="w-full"
+          src="./assets/edge-search-engine.avif"
+          alt="edge search engine"
+        />
+        <div
+          class="lg:absolute lg:top-40 lg:left-20 lg:bg-white lg:w-96 lg:rounded lg:py-12 lg:px-8"
+        >
+          <div class="text-2xl font-semibold my-2">Microsoft Edge</div>
+          <div class="my-4">
+            World-class performance with more privacy, more productivity and
+            more value while you browse
+          </div>
+          <button
+            class="bg-blue-600 rounded-sm px-4 py-2 text-white font-semibold hover:bg-blue-800"
+          >
+            Download now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Section -->
+    <section id="business">
+      <div class="p-3 lg:px-16">
+        <div class="my-4 text-3xl font-semibold">For business</div>
+        <div class="sm:grid sm:gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Products go here -->
+          <div class="my-6">
+            <img
+              class="w-full"
+              src="./assets/surface-business.webp"
+              alt="surface business"
+            />
+            <div class="inline-block my-1 px-3 py-1 bg-amber-400 font-semibold">
+              New
+            </div>
+            <div class="text-2xl font-semibold my-1">
+              Surface for Business Family
+            </div>
+            <div class="my-4">
+              Surface for Business devices enable work on your team's terms with
+              flexibility, built-in security and the power they nees to succed.
+            </div>
+            <a
+              href="#"
+              class="text-blue-600 font-semibold flex hover:underline hover:gap-1"
+              >Learn More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="my-6">
+            <img
+              class="w-full"
+              src="./assets/teams-business.webp"
+              alt="teams business"
+            />
+            <div
+              class="inline-block my-1 px-3 py-1 bg-amber-400 font-semibold invisible"
+            >
+              New
+            </div>
+
+            <div class="text-2xl font-semibold my-1">
+              Get Microsoft Teams for free
+            </div>
+            <div class="my-4">
+              Online meetings, chat and shared cloud storage - all in one place.
+            </div>
+            <a
+              href="#"
+              class="text-blue-600 font-semibold flex hover:underline hover:gap-1"
+              >Sign up for free
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="my-6">
+            <img
+              class="w-full"
+              src="./assets/hybrid-business.webp"
+              alt="hybrid business"
+            />
+            <div
+              class="inline-block my-1 px-3 py-1 bg-amber-400 font-semibold invisible"
+            >
+              New
+            </div>
+            <div class="text-2xl font-semibold my-1">
+              Thrive in a hybrid world
+            </div>
+            <div class="my-4">
+              Discover tools, resources and storages to help your employees
+              succeed in the new world of flexible work
+            </div>
+            <a
+              href="#"
+              class="text-blue-600 font-semibold flex hover:underline hover:gap-1"
+              >Learn More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="my-6">
+            <img
+              class="w-full"
+              src="./assets/cloud-business.webp"
+              alt="cloud business"
+            />
+            <div
+              class="inline-block my-1 px-3 py-1 bg-amber-400 font-semibold invisible"
+            >
+              New
+            </div>
+            <div class="text-2xl font-semibold my-1">
+              Welcome to your Windows 365 Cloud PC
+            </div>
+            <div class="my-4">
+              Securely stream your windows experience from the Microsoft cloud
+              to any device.
+            </div>
+            <a
+              href="#"
+              class="text-blue-600 font-semibold flex hover:underline hover:gap-1"
+              >Get it today
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Section -->
+    <section id="social">
+      <div class="p-3 lg:px-16">
+        <div class="flex gap-4 items-center">
+          <div>Follow Microsoft</div>
+          <div class="flex gap-4">
+            <img
+              class="h-8 w-8 cursor-pointer"
+              src="./assets/facebook-icon.png"
+              alt="facebook icon"
+            />
+            <img
+              class="h-8 w-8 cursor-pointer"
+              src="./assets/twitter-icon.png"
+              alt="twitter icon"
+            />
+            <img
+              class="h-8 w-8 cursor-pointer"
+              src="./assets/youtube-icon.png"
+              alt="youtube icon"
+            />
+          </div>
+        </div>
+        <a href="#">
+          <button
+            class="my-4 w-full flex justify-center items-center font-semibold rounded-sm bg-gray-300 py-2 hover:bg-white hover:shadow-md sm:ml-auto sm:w-36"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18"
+              />
+            </svg>
+            Back to top
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-xs text-gray-700 px-6 py-8 lg:px-16">
+      <div>
+        <div class="grid gap-6 grid-cols-1 sm:grid-cols-3 lg:grid-cols-6">
+          <div>
+            <div class="text-sm font-semibold my-4">Whats' New</div>
+            <ul>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft 365</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Surface Pro X</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Surface Pro 7</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Surface Laptop 3</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Windows 11 apps</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold my-4">Microsoft Store</div>
+            <ul>
+              <li class="my-3 hover:underline">
+                <a href="#">Account profile</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Download centre</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft Store Support</a>
+              </li>
+              <li class="my-3 hover:underline"><a href="#">Returns</a></li>
+              <li class="my-3 hover:underline">
+                <a href="#">Order tracking</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold my-4">Education</div>
+            <ul>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft in education</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">devices for education</a>
+              </li>
+              <li class="my-3">
+                <a href="#">Microsoft Teams for education</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft 365 education</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Offline education</a>
+              </li>
+              <li class="my-3">
+                <a href="#">Educator training and development</a>
+              </li>
+              <li class="my-3">
+                <a href="#">Deals for students and parents</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Azure for students</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold my-4">Business</div>
+            <ul>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft cloud</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft security</a>
+              </li>
+              <li class="my-3 hover:underline"><a href="#">Azure</a></li>
+              <li class="my-3 hover:underline"><a href="#">Dynamics 365</a></li>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft 365</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft Advertising</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft Industry</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft Teams</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold my-4">Developer & IT</div>
+            <ul>
+              <li class="my-3 hover:underline">
+                <a href="#">Developer Center</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Documentation</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft Learn</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft Tech Company</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Azure Marketplace</a>
+              </li>
+              <li class="my-3 hover:underline"><a href="#">AppSource</a></li>
+              <li class="my-3 hover:underline">
+                <a href="#">Microsoft Power Platform</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">Visual Studio</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold my-4">Company</div>
+            <ul>
+              <li class="my-3 hover:underline">
+                <a href="#">Careers</a>
+              </li>
+              <li class="my-3 hover:underline">
+                <a href="#">About Microsoft</a>
+              </li>
+              <li class="my-3 hover:underline"><a href="#">Company News</a></li>
+              <li class="my-3 hover:underline">
+                <a href="#">Privacy at Microsoft</a>
+              </li>
+              <li class="my-3 hover:underline"><a href="#">Investors</a></li>
+              <li class="my-3 hover:underline"><a href="#">Security</a></li>
+              <li class="my-3 hover:underline">
+                <a href="#">Sustainability</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="my-4 flex gap-2 items-center hover:underline">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
+              />
+            </svg>
+            English(India)
+          </div>
+          <ul class="flex gap-4 flex-wrap sm:justify-end">
+            <li><a href="#" class="hover:underline">Contact Microsoft</a></li>
+            <li><a href="#" class="hover:underline">Privacy</a></li>
+            <li><a href="#" class="hover:underline">Terms of use</a></li>
+            <li><a href="#" class="hover:underline">Trademarks</a></li>
+            <li><a href="#" class="hover:underline">About our ads</a></li>
+            <li><a href="#">&copy; Microsoft</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
